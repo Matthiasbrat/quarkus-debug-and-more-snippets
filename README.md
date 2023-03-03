@@ -1,6 +1,30 @@
-# VSCode Quarkus Debug and more Snippet Extension
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=matthiasbrat.quarkus-debug-snippets">
+    <img src="./logo.png" alt="logo" width=72 height=72>
+  </a>
 
-This VSCode extension provides snippets to improve your development experience with Quarkus framework. With this extension, you can quickly insert frequently used code snippets into your editor without having to type them manually.
+  <h3 align="center">Quarkus debug and more snippets</h3>
+
+  <p align="center">
+    This VSCode extension provides snippets to improve your development experience with Quarkus framework. basic CRUD requests snippets and debug configurations are provided.
+    <br>
+    <a href="https://github.com/Matthiasbrat/quarkus-debug-and-more-snippets/issues/new?template=bug.md">Report bug</a>
+    ·
+    <a href="https://github.com/Matthiasbrat/quarkus-debug-and-more-snippets/issues/new?template=feature.md&labels=feature">Request feature</a>
+  </p>
+</p>
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+<hr/>
+
+## Table of contents
+
+- [Installation](#installation)
+- [Snippets](#snippets)
+- [Contributing](#contributing)
+- [Copyright and license](#copyright-and-license)
+
 
 ## Installation
 
@@ -52,3 +76,14 @@ This extension provides the following Quarkus snippets:
 
 - `quarkus get request with path parameters`: Inserts code for sending a GET request with path parameters to a Quarkus application.
     - `Quarkus-request: GET with path parameters` or `q-g-p`
+
+## Contributing
+
+Do whatever and ask for a merge request if you want to contribute 👍.
+
+## Copyright and license
+
+Code released under the [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html).
+You can take a look at the [license file](https://github.com/Matthiasbrat/quarkus-debug-and-more-snippets/blob/main/LICENSE.md)
+
+Enjoy 🐸
