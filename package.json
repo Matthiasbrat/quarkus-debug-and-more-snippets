@@ -4,7 +4,7 @@
   "description": "Snippets for debugging with quarkus in vscode and some Resteasy reactive CRUD requests snippets",
   "version": "0.0.1",
   "publisher": "Matthiasbrat",
-  "icon": "https://raw.githubusercontent.com/Matthiasbrat/quarkus-debug-and-more-snippets/main/logo.png",
+  "icon": "./logo.png",
   "engines": {
     "vscode": "^1.54.0"
   },
