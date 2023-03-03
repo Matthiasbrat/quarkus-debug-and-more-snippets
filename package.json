@@ -1,6 +1,6 @@
 {
-  "name": "quarkus-debug-config",
-  "displayName": "Quarkus debug config and more",
+  "name": "quarkus-debug-snippets",
+  "displayName": "Quarkus debug snippets and more",
   "description": "Snippets for debugging with quarkus in vscode and some Resteasy reactive CRUD requests snippets",
   "version": "0.0.1",
   "publisher": "Matthiasbrat",
