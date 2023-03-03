@@ -3,6 +3,7 @@
   "displayName": "Quarkus debug config and more",
   "description": "Snippets for debugging with quarkus in vscode and some Resteasy reactive CRUD requests snippets",
   "version": "0.0.1",
+  "publisher": "Matthiasbrat",
   "engines": {
     "vscode": "^1.54.0"
   },
