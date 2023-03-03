@@ -32,8 +32,10 @@ To install the extension, follow these steps:
 
 1. Open Visual Studio Code.
 2. Press `Ctrl+Shift+X` to open the Extensions panel.
-3. Search for "Quarkus Snippet Extension".
+3. Search for "Quarkus debug snippets and more".
 4. Click on "Install".
+
+or just follow this link : https://marketplace.visualstudio.com/items?itemName=matthiasbrat.quarkus-debug-snippets
 
 ## Snippets
 
