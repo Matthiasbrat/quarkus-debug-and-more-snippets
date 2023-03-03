@@ -1,0 +1,24 @@
+{
+  "name": "quarkus-debug-config",
+  "displayName": "Quarkus debug config and more",
+  "description": "Snippets for debugging with quarkus in vscode and some Resteasy reactive CRUD requests snippets",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "json",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Matthiasbrat/quarkus-debug-config.git"
+  }  
+}
