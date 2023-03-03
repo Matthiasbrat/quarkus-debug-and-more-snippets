@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=matthiasbrat.quarkus-debug-snippets">
-    <img src="./logo.png" alt="logo" width=72 height=72>
+    <img src="https://raw.githubusercontent.com/Matthiasbrat/quarkus-debug-and-more-snippets/main/logo.png" alt="logo" width=72 height=72>
   </a>
 
   <h3 align="center">Quarkus debug and more snippets</h3>
