@@ -14,7 +14,7 @@
   "contributes": {
     "snippets": [
       {
-        "language": "json",
+        "language": "java",
         "path": "./snippets/snippets.code-snippets"
       }
     ]

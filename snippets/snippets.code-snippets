@@ -1,31 +1,59 @@
 {
 	"quarkus get request": {
-	  "prefix": ["Quarkus-request: GET", "q-g"],
-	  "body": ["@GET\n@Path(\"/content\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response dowloadFile(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"],
-	  "description": "Quarkus GET HTTP Request Example."
+		"prefix": [
+			"Quarkus-request: GET",
+			"q-g"
+		],
+		"body": [
+			"@GET\n@Path(\"/content\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response dowloadFile(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus GET HTTP Request Example."
 	},
 	"quarkus post request": {
-	  "prefix": ["Quarkus-request: POST", "q-p"],
-	  "body": ["@POST\n@Path(\"/nodes\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response createNode(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"],
-	  "description": "Quarkus POST HTTP Request Example."
+		"prefix": [
+			"Quarkus-request: POST",
+			"q-p"
+		],
+		"body": [
+			"@POST\n@Path(\"/nodes\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response createNode(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus POST HTTP Request Example."
 	},
 	"quarkus put request": {
-	  "prefix": ["Quarkus-request: PUT", "q-u"],
-	  "body": ["@PUT\n@Path(\"/nodes/{nodeId}\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response updateNode(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"],
-	  "description": "Quarkus PUT HTTP Request Example."
+		"prefix": [
+			"Quarkus-request: PUT",
+			"q-u"
+		],
+		"body": [
+			"@PUT\n@Path(\"/nodes/{nodeId}\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response updateNode(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus PUT HTTP Request Example."
 	},
 	"quarkus delete request": {
-	  "prefix": ["Quarkus-request: DELETE", "q-d"],
-	  "body": ["@DELETE\n@Path(\"/nodes\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response deleteNode(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"],
-	  "description": "Quarkus DELETE HTTP Request Example."
+		"prefix": [
+			"Quarkus-request: DELETE",
+			"q-d"
+		],
+		"body": [
+			"@DELETE\n@Path(\"/nodes\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response deleteNode(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus DELETE HTTP Request Example."
 	},
 	"quarkus get request with path param": {
-	  "prefix": ["Quarkus-request: GET with Path Param", "q-gp"],
-	  "body": ["@GET\n@Path(\"/nodes/{${1:param}}\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response getNode(@RestHeader(\"OTCSTICKET\") final String authToken, @PathParam(\"${1:param}\") String ${2:param})\n{\n\treturn null;\n}"],
-	  "description": "Quarkus GET HTTP Request with Path Param Example."
+		"prefix": [
+			"Quarkus-request: GET with Path Param",
+			"q-gp"
+		],
+		"body": [
+			"@GET\n@Path(\"/nodes/{${1:param}}\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response getNode(@RestHeader(\"OTCSTICKET\") final String authToken, @PathParam(\"${1:param}\") String ${2:param})\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus GET HTTP Request with Path Param Example."
 	},
 	"Quarkus-debug: config": {
-		"prefix": ["Quarkus-debug: config", "q-d-c"],
+		"prefix": [
+			"Quarkus-debug: config",
+			"q-d-c"
+		],
 		"body": [
 			"$BLOCK_COMMENT_START launch.json $BLOCK_COMMENT_END\n{\"version\": \"0.2.0\",\"configurations\": [{\"preLaunchTask\": \"quarkus:dev\",\"type\": \"java\",\"request\": \"attach\",\"hostName\": \"localhost\",\"name\": \"Debug Quarkus application\",\"port\": 5005}]}",
 			"$BLOCK_COMMENT_START settings.json $BLOCK_COMMENT_END\n{\"java.configuration.updateBuildConfiguration\": \"interactive\"}",
@@ -33,25 +61,34 @@
 		],
 		"description": "Quarkus Debugger Configuration for vscode"
 	},
-    "Quarkus-debug: launch.json": {
-        "prefix": ["Quarkus-debug: launch.json", "q-d-l"],
-        "body": [
-            "{\"version\": \"0.2.0\",\"configurations\": [{\"preLaunchTask\": \"quarkus:dev\",\"type\": \"java\",\"request\": \"attach\",\"hostName\": \"localhost\",\"name\": \"Debug Quarkus application\",\"port\": 5005}]}"
-        ],
-        "description": "Quarkus debug launch.json config for vscode"
-    },
-    "Quarkus-debug: settings.json": {
-        "prefix": ["Quarkus-debug: settings.json", "q-d-s"],
-        "body": [
-            "{\"java.configuration.updateBuildConfiguration\": \"interactive\"}"
-        ],
-        "description": "Quarkus debug settings.json config for vscode"
-    },
-    "Quarkus-debug: tasks.json": {
-        "prefix": ["Quarkus-debug: tasks.json", "q-d-t"],
-        "body": [
-            "{\"version\": \"2.0.0\",\"tasks\": [{\"type\": \"shell\",\"isBackground\": true,\"problemMatcher\": [{\"owner\": \"quarkus\",\"fileLocation\": [\"relative\",\"\\${workspaceFolder\\}/src/main/resources/templates\"],\"pattern\": [{\"regexp\": \"\\\\\\\\[(\\\\\\\\d+)\\\\\\\\]\\\\\\\\s(.*):(\\\\\\\\d+):(\\\\\\\\d+)\\\\\\\\s\\\\\\\\-\\\\\\\\s{(.*)}:\\\\\\\\s(.*)\\$\",\"file\": 2,\"line\": 3,\"column\": 4,\"message\": 6}],\"background\": {\"activeOnStart\": true,\"beginsPattern\": \"^.*Scanning for projects...\",\"endsPattern\": \"(^.*Quarkus .* started in .*\\\\\\\\.)|(^.* ERROR .* Failed to start)\"}}],\"group\": \"build\",\"label\": \"quarkus:dev\",\"command\": \"./mvnw quarkus:dev \",\"windows\": {\"command\": \".\\\\\\mvnw.cmd quarkus:dev \"}},{\"type\": \"shell\",\"isBackground\": true,\"problemMatcher\": [{\"owner\": \"quarkus\",\"fileLocation\": [\"relative\",\"\\${workspaceFolder\\}/src/main/resources/templates\"],\"pattern\": [{\"regexp\": \"\\\\\\\\[(\\\\\\\\d+)\\\\\\\\]\\\\\\\\s(.*):(\\\\\\\\d+):(\\\\\\\\d+)\\\\\\\\s\\\\\\\\-\\\\\\\\s{(.*)}:\\\\\\\\s(.*)$\",\"file\": 2,\"line\": 3,\"column\": 4,\"message\": 6}],\"background\": {\"activeOnStart\": true}}],\"group\": \"build\",\"label\": \"package -Pnative\",\"command\": \"./mvnw package -Pnative \",\"windows\": {\"command\": \".\\\\\\\\mvnw.cmd package -Pnative \"}}]}"
-        ],
-        "description": "Quarkus debug tasks.json config for vscode"
-    }
+	"Quarkus-debug: launch.json": {
+		"prefix": [
+			"Quarkus-debug: launch.json",
+			"q-d-l"
+		],
+		"body": [
+			"{\"version\": \"0.2.0\",\"configurations\": [{\"preLaunchTask\": \"quarkus:dev\",\"type\": \"java\",\"request\": \"attach\",\"hostName\": \"localhost\",\"name\": \"Debug Quarkus application\",\"port\": 5005}]}"
+		],
+		"description": "Quarkus debug launch.json config for vscode"
+	},
+	"Quarkus-debug: settings.json": {
+		"prefix": [
+			"Quarkus-debug: settings.json",
+			"q-d-s"
+		],
+		"body": [
+			"{\"java.configuration.updateBuildConfiguration\": \"interactive\"}"
+		],
+		"description": "Quarkus debug settings.json config for vscode"
+	},
+	"Quarkus-debug: tasks.json": {
+		"prefix": [
+			"Quarkus-debug: tasks.json",
+			"q-d-t"
+		],
+		"body": [
+			"{\"version\": \"2.0.0\",\"tasks\": [{\"type\": \"shell\",\"isBackground\": true,\"problemMatcher\": [{\"owner\": \"quarkus\",\"fileLocation\": [\"relative\",\"\\${workspaceFolder\\}/src/main/resources/templates\"],\"pattern\": [{\"regexp\": \"\\\\\\\\[(\\\\\\\\d+)\\\\\\\\]\\\\\\\\s(.*):(\\\\\\\\d+):(\\\\\\\\d+)\\\\\\\\s\\\\\\\\-\\\\\\\\s{(.*)}:\\\\\\\\s(.*)\\$\",\"file\": 2,\"line\": 3,\"column\": 4,\"message\": 6}],\"background\": {\"activeOnStart\": true,\"beginsPattern\": \"^.*Scanning for projects...\",\"endsPattern\": \"(^.*Quarkus .* started in .*\\\\\\\\.)|(^.* ERROR .* Failed to start)\"}}],\"group\": \"build\",\"label\": \"quarkus:dev\",\"command\": \"./mvnw quarkus:dev \",\"windows\": {\"command\": \".\\\\\\mvnw.cmd quarkus:dev \"}},{\"type\": \"shell\",\"isBackground\": true,\"problemMatcher\": [{\"owner\": \"quarkus\",\"fileLocation\": [\"relative\",\"\\${workspaceFolder\\}/src/main/resources/templates\"],\"pattern\": [{\"regexp\": \"\\\\\\\\[(\\\\\\\\d+)\\\\\\\\]\\\\\\\\s(.*):(\\\\\\\\d+):(\\\\\\\\d+)\\\\\\\\s\\\\\\\\-\\\\\\\\s{(.*)}:\\\\\\\\s(.*)$\",\"file\": 2,\"line\": 3,\"column\": 4,\"message\": 6}],\"background\": {\"activeOnStart\": true}}],\"group\": \"build\",\"label\": \"package -Pnative\",\"command\": \"./mvnw package -Pnative \",\"windows\": {\"command\": \".\\\\\\\\mvnw.cmd package -Pnative \"}}]}"
+		],
+		"description": "Quarkus debug tasks.json config for vscode"
+	}
 }
