@@ -20,6 +20,10 @@
       {
         "language": "json",
         "path": "./snippets/debug-snippets.code-snippets"
+      },
+      {
+        "language": "quarkus-properties",
+        "path": "./snippets/application-properties.code-snippets"
       }
     ]
   },

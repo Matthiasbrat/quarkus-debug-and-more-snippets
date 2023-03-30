@@ -1,0 +1,23 @@
+{
+    "Quarkus http path": {
+		"prefix": [
+			"Quarkus-properties: set http path",
+			"q-p-h"
+		],
+		"body": [
+			"quarkus.http.root-path=${1:/}"
+		],
+		"description": "Quarkus set http path."
+	},
+
+    "Quarkus rest client": {
+        "prefix": [
+            "Quarkus-properties: set rest client",
+            "q-p-r"
+        ],
+        "body": [
+            "quarkus.rest-client.${1:client-name}.url=${2:http://localhost:8080}"
+        ],
+        "description": "Quarkus set rest client."
+    }
+}
