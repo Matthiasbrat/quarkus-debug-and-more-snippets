@@ -1,0 +1,52 @@
+{
+	"quarkus get request": {
+		"prefix": [
+			"Quarkus-request: GET",
+			"q-g"
+		],
+		"body": [
+			"@GET\n@Path(\"/content\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response dowloadFile(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus GET HTTP Request Example."
+	},
+	"quarkus post request": {
+		"prefix": [
+			"Quarkus-request: POST",
+			"q-p"
+		],
+		"body": [
+			"@POST\n@Path(\"/nodes\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response createNode(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus POST HTTP Request Example."
+	},
+	"quarkus put request": {
+		"prefix": [
+			"Quarkus-request: PUT",
+			"q-u"
+		],
+		"body": [
+			"@PUT\n@Path(\"/nodes/{nodeId}\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response updateNode(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus PUT HTTP Request Example."
+	},
+	"quarkus delete request": {
+		"prefix": [
+			"Quarkus-request: DELETE",
+			"q-d"
+		],
+		"body": [
+			"@DELETE\n@Path(\"/nodes\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response deleteNode(@RestHeader(\"OTCSTICKET\") final String authToken)\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus DELETE HTTP Request Example."
+	},
+	"quarkus get request with path param": {
+		"prefix": [
+			"Quarkus-request: GET with Path Param",
+			"q-gp"
+		],
+		"body": [
+			"@GET\n@Path(\"/nodes/{${1:param}}\")\n@Produces(MediaType.APPLICATION_JSON)\n@Consumes(MediaType.APPLICATION_JSON)\npublic Response getNode(@RestHeader(\"OTCSTICKET\") final String authToken, @PathParam(\"${1:param}\") String ${2:param})\n{\n\treturn null;\n}"
+		],
+		"description": "Quarkus GET HTTP Request with Path Param Example."
+	}
+}

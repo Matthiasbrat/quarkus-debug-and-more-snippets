@@ -2,7 +2,7 @@
   "name": "quarkus-debug-snippets",
   "displayName": "Quarkus debug snippets and more",
   "description": "Snippets for debugging with quarkus in vscode and some Resteasy reactive CRUD requests snippets",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "Matthiasbrat",
   "icon": "./logo.png",
   "engines": {
@@ -15,7 +15,11 @@
     "snippets": [
       {
         "language": "java",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/crud-snippets.code-snippets"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/debug-snippets.code-snippets"
       }
     ]
   },
