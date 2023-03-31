@@ -79,6 +79,16 @@ This extension provides the following Quarkus snippets:
 - `quarkus get request with path parameters`: Inserts code for sending a GET request with path parameters to a Quarkus application.
     - `Quarkus-request: GET with path parameters` or `q-g-p`
 
+### Quarkus application.properties
+
+- `Quarkus http path`: Inserts code for setting the path of the Quarkus application in application.properties file.
+    - `Quarkus-properties: set http path` or `q-p-h`
+<p></p>
+
+- `Quarkus rest client`: Inserts code for setting rest-client property in application.properties file.
+    - `Quarkus-properties: set rest client` or `q-p-r`
+<p></p>
+
 ## Contributing
 
 Do whatever and ask for a merge request if you want to contribute 👍.
